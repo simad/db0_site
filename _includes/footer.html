@@ -1,0 +1,23 @@
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <span class="copyright">©{{ site.time | date: '%Y' }} Division By Zero Ltd:
+                        "this is fine"</span>
+                </div>
+                <div class="col-md-2">
+                    <ul class="list-inline quicklinks">
+                        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="privacy">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    {% include privacy.html %}
+                                </div>
+                            </div>
+                        </div>
+                        <li><a href="#privacy" data-toggle="modal" data-target=".modal">Privacy & Cookies</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>

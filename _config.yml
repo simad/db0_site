@@ -1,0 +1,45 @@
+url: https://simad.github.io
+baseurl: /db0_site
+
+# Site settings
+title: Division by Zero
+email: hello@divisionbyzero.co
+description: "We build software. We solve problems. We break rules. We care about our craft."
+
+
+# Team names, titles and social links
+#people:
+#- name: Kay Garland
+#  pic: 1
+#  position: Lead Designer
+#  social:
+#    - title: twitter
+#      url: #
+#    - title: facebook
+#      url: #
+#    - title: stack-overflow
+#      url: #
+#
+## Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+#social:
+#  - title: twitter
+#    url: http://twitter.com/jekyllrb
+#  - title: facebook
+#    url:
+#  - title: stack-overflow
+#    url: http://stackoverflow.com/questions/tagged/jekyll
+#  - title: bitbucket
+#    url: http://bitbucket.org/jekyll
+#  - title: github
+#    url: http://github.com/jekyll
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: Division by Zero LTD
+  - line: 2 Dolben Court
+  - line: Montaigne Close
+  - line: SW1P 4BB
+
+# Build settings
+markdown: kramdown
+permalink: pretty
