@@ -1,0 +1,197 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@import "reset";
+@import "colors";
+@import "metrics";
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    background-color: $light-color;
+    color: $dark-color;
+    position: relative;
+}
+
+a, a:visited, a:hover, a:link, a:active {
+    text-decoration: none;
+}
+#container {
+    display: block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    span {
+        font-weight: 700;
+    }
+    header {
+        height: 700px;
+        width: 100%;
+        text-align: center;
+    }
+    section {
+        ul :not(:last-child) {
+            margin-bottom: 30px;
+        }
+        min-height: 450px;
+        padding-bottom: $padding-section;
+        padding-top: $padding-section;
+        font-weight: 300;
+        font-size: 30px;
+
+        .bordered {
+            max-width: 80%;
+            margin-bottom: $padding-section;
+            top: 90px;
+            border: 3px solid;
+            border-radius: 2px;
+            display: inline-block;
+            text-transform: uppercase;
+        }
+        .content {
+            width: 80%;
+            max-width: $content-width;
+            text-align: left;
+            display: block;
+            margin: 0 auto;
+            line-height: $line-height;
+            word-wrap: break-word;
+        }
+        .content span {
+            text-transform: uppercase;
+            font-size: 34px;
+            vertical-align: text-bottom;
+        }
+        .content h3 {
+            @extend span;
+            display:inline;
+            margin-right: 20px;
+        }
+        .content h3.web {
+            padding-bottom: 0;
+            border-bottom: 2px solid $accent-color;
+        }
+    }
+    section:nth-of-type(even) {
+        background: $light-color;
+        color: $dark-color;
+        .bordered {
+            border-color: $dark-color;
+        }
+        a, a:visited, a:hover, a:link, a:active {
+            color: $dark-color;
+        }
+    }
+    section:nth-of-type(odd) {
+        background: $dark-color;
+        color: $light-color;
+        .bordered {
+            border-color: $light-color;
+        }
+        a, a:visited, a:hover, a:link, a:active {
+            color: $light-color;
+        }
+    }
+    section#say_hello {
+        padding-bottom: 0;
+        .web {
+            padding-bottom: 4px;
+            border-bottom: 4px solid $accent-color;
+        }
+    }
+    footer {
+
+        min-height: 100px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #ccc;
+        color: $dark-color;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: $line-height;
+        span {
+            font-weight: 700;
+        }
+        i {
+            color: $accent-color;
+        }
+    }
+}
+
+h1, ul, li, img {
+    -moz-transition: width 0.6s ease-in-out, left 1s ease-in-out;
+    -webkit-transition: width 0.6s ease-in-out, left 1s ease-in-out;
+    -o-transition: width 0.6s ease-in-out, left 1s ease-in-out;
+    transition: width 0.6s ease-in-out, left 1s ease-in-out;
+}
+
+div#logo {
+    height: 33%;
+    max-width: 50%;
+    max-height: 30%;
+    text-indent: -9999px;
+    display: block;
+    margin: 0 auto;
+    background: $light_color url(../images/div0_logo.png) no-repeat center center;
+    background-size: 100%;
+}
+em {
+    color: $accent-color;
+}
+div.we_are {
+    height: 33%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size: 30px;
+    li {
+        display: inline;
+        padding: 0 20px;
+    }
+}
+h2 {
+    @extend .bordered;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 18px;
+}
+@media only all and (max-width: 600px){
+    #container {
+        section {
+            .content {
+                width: 90%;
+                text-align: justify;
+            }
+            .content h3 {
+                width: 100%;
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+    div#logo {
+        max-width: 50%;
+        background: url(../images/div0_logo_vertical.png) center center no-repeat;
+        background-size: 100%;
+    }
+    div.we_are {
+        li {
+            display: block;
+            border-left: none;
+            padding: 10px 0;
+        }
+    }
+}
+::-moz-selection {
+    color: $dark-color;
+    background: $accent-color;
+}
+::selection {
+    color: $dark-color;
+    background: $accent-color;
+}

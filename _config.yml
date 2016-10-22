@@ -6,7 +6,8 @@ title: Division by Zero
 email: hello@divisionbyzero.co
 description: "We build software. We solve problems. We break rules. We care about our craft."
 
-
+# Google services
+google_analytics: UA-86013895-1
 # Team names, titles and social links
 #people:
 #- name: Kay Garland
