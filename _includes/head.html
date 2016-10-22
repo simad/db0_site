@@ -1,15 +1,14 @@
 <head>
-    {% include favicon-madness.html %}
-    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
-    <meta name="application-name" content="Division by Zero"/>
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="https://www.divisionbyzero.co/mstile-144x144.png" />
+    <meta name="application-name" content="{{site.name}}"/>
     <meta charset="utf-8">
     <title>Division by Zero</title>
-    <meta name="description" content="This is Division by Zero. We make cool things; we solve problems; we break the rules." />
+    <meta name="description" content="{{site.description}}" />
+    {% include favicon-madness.html %}
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
     <link data-turbolinks-track="true" href="stylesheets/style.css" media="all" rel="stylesheet" />
     <link data-turbolinks-track="true" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" media="all" rel="stylesheet" />
     {% if jekyll.environment == 'production' %}
     {% include analytics.html %}
     {% endif %}
+    {% seo %}
 </head>
