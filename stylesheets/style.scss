@@ -102,21 +102,21 @@ a, a:visited, a:hover, a:link, a:active {
         }
     }
     footer {
-
-        min-height: 100px;
-        padding-top: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding: 10px 10px;
         background: #ccc;
         color: $dark-color;
         font-weight: 300;
-        font-size: 18px;
-        line-height: $line-height;
+        font-size: 20px;
+        line-height: 30px;
         span {
             font-weight: 700;
         }
         i {
             color: $accent-color;
+        }
+        a {
+            color: $dark-color;
+            font-weight: 700;
         }
     }
 }
@@ -165,6 +165,7 @@ h2 {
             .content {
                 width: 90%;
                 text-align: justify;
+                line-height: 36px;
             }
             .content h3 {
                 width: 100%;
