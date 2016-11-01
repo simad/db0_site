@@ -39,8 +39,7 @@ a, a:visited, a:hover, a:link, a:active {
         padding-bottom: $padding-section;
         padding-top: $padding-section;
         font-weight: 300;
-        font-size: 30px;
-
+        font-size: 1.8em;
         .bordered {
             max-width: 80%;
             margin-bottom: $padding-section;
@@ -146,7 +145,7 @@ div.we_are {
     display: flex;
     justify-content:center;
     align-items:center;
-    font-size: 30px;
+    font-size: 2em;
     li {
         display: inline;
         padding: 0 20px;
@@ -159,19 +158,19 @@ h2 {
     text-align: center;
     padding: 14px 18px;
 }
-@media only all and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     #container {
         section {
             .content {
                 width: 90%;
-                text-align: justify;
-                line-height: 36px;
+                line-height: 1.2;
+                font-size: 0.8em;
             }
             .content h3 {
                 width: 100%;
-                margin: 0 auto;
                 display: block;
                 text-align: center;
+                margin: 0 auto 0.5em;
             }
         }
     }
@@ -181,6 +180,7 @@ h2 {
         background-size: 100%;
     }
     div.we_are {
+        font-size: 2em;
         li {
             display: block;
             border-left: none;
