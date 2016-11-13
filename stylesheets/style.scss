@@ -27,9 +27,14 @@ a, a:visited, a:hover, a:link, a:active {
         font-weight: 700;
     }
     header {
-        height: 90vh;
+        height: $header-height;
         width: 100%;
         text-align: center;
+        #particles-js {
+            position: absolute;
+            height: $header-height;
+            width: 100%;
+        }
     }
     section {
         ul :not(:last-child) {
