@@ -18,6 +18,11 @@ body {
 a, a:visited, a:hover, a:link, a:active {
     text-decoration: none;
 }
+#particles-js {
+    position: absolute;
+    height: $header-height;
+    width: 100%;
+}
 #container {
     display: block;
     position: relative;
@@ -30,11 +35,6 @@ a, a:visited, a:hover, a:link, a:active {
         height: $header-height;
         width: 100%;
         text-align: center;
-        #particles-js {
-            position: absolute;
-            height: $header-height;
-            width: 100%;
-        }
     }
     section {
         ul :not(:last-child) {
